@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Cachorros</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Cachorros</h1>
+
+    <!-- Formulário para adicionar novo cachorro -->
+    <div class="form-container">
+      <h2>Adicionar Novo Cachorro</h2>
+      <form id="dog-form">
+        <input type="text" id="nomeCachorro" placeholder="Nome do Cachorro" required>
+        <input type="text" id="nomeDono" placeholder="Nome do Dono" required>
+        <input type="text" id="telefone" placeholder="Telefone" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="url" id="foto" placeholder="URL da Foto" required>
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+
+    <!-- Tabela para exibir os cachorros -->
+    <table id="dog-table">
+      <thead>
+        <tr>
+          <th>
+            <img src="https://placedog.net/150/150?random=1" alt="center" align-items: center>
+          </th>
+          <th>Nome do Cachorro</th>
+          <th>Nome do Dono</th>
+          <th>Telefone</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas serão preenchidas dinamicamente com JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
